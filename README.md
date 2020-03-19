@@ -19,3 +19,11 @@ WEB 服务器使用主流的 tomcat 服务器，而且由于使用了 Spring Boo
 本项目调用了百度地图的 API 来实现地图定位功能，使用了网易七鱼的 API 来实现了客服功能。这些都是十分成熟且实用的 API，功能强大，实用效果很好。
 
 对于原始汽车数据的获取，我们使用了 Python 的 beautifulsoup 库来解析 HTML 数据，使用 selenium 框架来突破瓜子二手车的反爬虫策略。
+
+## 页面预览
+![筛选](https://github.com/dream-fall/huaji_car_Java/raw/master/pic/image018.jpg)
+![推荐](https://github.com/dream-fall/huaji_car_Java/raw/master/pic/image022.png)
+![用户反馈](https://github.com/dream-fall/huaji_car_Java/raw/master/pic/image025.png)
+![页脚](https://github.com/dream-fall/huaji_car_Java/raw/master/pic/image026.png)
+
+>本项目为Java课程设计项目，详细设计内容可见/doc文件夹中的实验报告。
