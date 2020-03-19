@@ -1,0 +1,11 @@
+logging:
+  level:
+    root: warn
+    com.huajicar.demo: info
+  file: log/blog-pro.log
+
+
+
+
+
+

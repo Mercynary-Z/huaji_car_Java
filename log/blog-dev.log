@@ -1,0 +1,222 @@
+2018-06-20 12:51:32.036  INFO 7528 --- [restartedMain] com.huajicar.demo.DemoApplication        : Starting DemoApplication on Dell-XPS13-9343 with PID 7528 (C:\Users\73536\Documents\Code\Java\huaji_car\target\classes started by 73536 in C:\Users\73536\Documents\Code\Java\huaji_car)
+2018-06-20 12:51:32.045 DEBUG 7528 --- [restartedMain] com.huajicar.demo.DemoApplication        : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-20 12:51:32.046  INFO 7528 --- [restartedMain] com.huajicar.demo.DemoApplication        : The following profiles are active: dev
+2018-06-20 12:51:32.231  INFO 7528 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3e498716: startup date [Wed Jun 20 12:51:32 CST 2018]; root of context hierarchy
+2018-06-20 12:51:34.768  INFO 7528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-20 12:51:34.795  INFO 7528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-20 12:51:34.796  INFO 7528 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-20 12:51:34.803  INFO 7528 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Programs\mysql-5.7.21-winx64\bin;C:\Programs\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\73536\AppData\Local\Microsoft\WindowsApps;C:\Programs\Microsoft VS Code\bin;C:\Programs\Anaconda3\Scripts;.]
+2018-06-20 12:51:34.921  INFO 7528 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-20 12:51:34.923  INFO 7528 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2692 ms
+2018-06-20 12:51:35.083  INFO 7528 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-20 12:51:35.088  INFO 7528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-20 12:51:35.088  INFO 7528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-20 12:51:35.090  INFO 7528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-20 12:51:35.090  INFO 7528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-20 12:51:35.627  INFO 7528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-20 12:51:35.885  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3e498716: startup date [Wed Jun 20 12:51:32 CST 2018]; root of context hierarchy
+2018-06-20 12:51:36.047  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/AboutUs],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.aboutUsController.aboutUs(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.050  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/AdminLogin],methods=[POST]}" onto java.lang.String com.huajicar.demo.controller.admin.AdminLoginController.checkAccount(com.huajicar.demo.entity.Admin,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.051  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/AdminLogin],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.admin.AdminLoginController.adminLogin(javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.051  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/AdminLogout],methods=[POST]}" onto java.lang.String com.huajicar.demo.controller.admin.AdminLoginController.adminLogout(javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.053  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Manage],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.admin.manageController.manage(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.053  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/AddAgent],methods=[POST]}" onto java.lang.String com.huajicar.demo.controller.admin.manageController.addAgent(org.springframework.web.multipart.MultipartFile,com.huajicar.demo.entity.Agent,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.053  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/DeleteComment],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.admin.manageController.deleteComment(int,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.054  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ContactUs],methods=[POST]}" onto java.lang.String com.huajicar.demo.controller.contactUsController.submitComment(com.huajicar.demo.entity.Comment,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.055  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ContactUs],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.contactUsController.contactUs(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.056  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ || /index],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.indexController.index(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.057  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/PropertyDetail],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.propertyDetailController.list(int,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.057  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Purchase],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.propertyDetailController.purchase(int,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.058  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/PropertyListing],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.propertyListingController.list(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.059  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Chop],methods=[POST]}" onto java.lang.String com.huajicar.demo.controller.user.chopController.chop(com.huajicar.demo.entity.Chop,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.059  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/RejectChop],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.user.chopController.rejectChop(int,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.060  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ApplyChop],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.user.chopController.applyChop(int,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.062  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Register],methods=[POST]}" onto java.lang.String com.huajicar.demo.controller.user.loginController.register(java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-06-20 12:51:36.063  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Login],methods=[POST]}" onto java.lang.String com.huajicar.demo.controller.user.loginController.login(java.lang.String,java.lang.String,org.springframework.ui.Model,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.063  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Login],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.user.loginController.login(org.springframework.ui.Model,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest)
+2018-06-20 12:51:36.063  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Logout],methods=[POST]}" onto java.lang.String com.huajicar.demo.controller.user.loginController.logout(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.065  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/NewCar],methods=[POST]}" onto java.lang.String com.huajicar.demo.controller.user.newCarController.addCar(com.huajicar.demo.entity.Car,java.lang.String,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.065  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/NewCar],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.user.newCarController.newCar(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.068  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/RemoveCar],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.user.tradeInfoController.removeCar(int,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.068  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/TradeInfo],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.user.tradeInfoController.tradeInfo(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.072  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserInfo],methods=[GET]}" onto java.lang.String com.huajicar.demo.controller.user.userInfoController.getUserInfo(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.073  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UpdateUserImg],methods=[POST]}" onto java.lang.String com.huajicar.demo.controller.user.userInfoController.updateUserImg(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.073  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UpdateUserInfo],methods=[POST]}" onto java.lang.String com.huajicar.demo.controller.user.userInfoController.updateUserInfo(java.lang.String,java.lang.String,java.lang.String,java.sql.Date,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2018-06-20 12:51:36.076  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-20 12:51:36.077  INFO 7528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-20 12:51:36.127  INFO 7528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-20 12:51:36.127  INFO 7528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-20 12:51:36.312  INFO 7528 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-06-20 12:51:37.210  INFO 7528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-20 12:51:37.244  INFO 7528 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-20 12:51:37.246  INFO 7528 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-20 12:51:37.253  INFO 7528 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-20 12:51:37.298  INFO 7528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-20 12:51:37.304  INFO 7528 --- [restartedMain] com.huajicar.demo.DemoApplication        : Started DemoApplication in 6.528 seconds (JVM running for 8.754)
+2018-06-20 12:51:51.131  INFO 7528 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-20 12:51:51.132  INFO 7528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-20 12:51:51.165  INFO 7528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2018-06-20 12:51:51.223  INFO 7528 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-20 12:51:51.441  INFO 7528 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-20 12:51:51.504 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : ==>  Preparing: SELECT DISTINCT car_brand FROM car ORDER BY car_brand 
+2018-06-20 12:51:51.523 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : ==> Parameters: 
+2018-06-20 12:51:51.540 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : <==      Total: 29
+2018-06-20 12:51:51.545 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : ==>  Preparing: SELECT DISTINCT car_type FROM car ORDER BY car_type 
+2018-06-20 12:51:51.545 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : ==> Parameters: 
+2018-06-20 12:51:51.548 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : <==      Total: 6
+2018-06-20 12:51:51.549 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : ==>  Preparing: SELECT DISTINCT car_age FROM car ORDER BY car_age 
+2018-06-20 12:51:51.550 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : ==> Parameters: 
+2018-06-20 12:51:51.552 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : <==      Total: 11
+2018-06-20 12:51:51.554 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : ==>  Preparing: SELECT DISTINCT car_shift FROM car ORDER BY car_shift 
+2018-06-20 12:51:51.554 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : ==> Parameters: 
+2018-06-20 12:51:51.556 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : <==      Total: 8
+2018-06-20 12:51:51.558 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : ==>  Preparing: SELECT DISTINCT car_color FROM car ORDER BY car_color 
+2018-06-20 12:51:51.560 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : ==> Parameters: 
+2018-06-20 12:51:51.561 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : <==      Total: 10
+2018-06-20 12:51:51.563 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : ==>  Preparing: SELECT DISTINCT car_fuel FROM car ORDER BY car_fuel 
+2018-06-20 12:51:51.564 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : ==> Parameters: 
+2018-06-20 12:51:51.565 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getProperty    : <==      Total: 4
+2018-06-20 12:51:51.575 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.AgentMapper.getNAgent    : ==>  Preparing: SELECT * FROM agent LIMIT 0,4 
+2018-06-20 12:51:51.576 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.AgentMapper.getNAgent    : ==> Parameters: 
+2018-06-20 12:51:51.580 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.AgentMapper.getNAgent    : <==      Total: 4
+2018-06-20 12:51:51.583 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getCarRandom   : ==>  Preparing: SELECT * FROM car WHERE on_sale=1 ORDER BY rand() LIMIT 4 
+2018-06-20 12:51:51.584 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getCarRandom   : ==> Parameters: 
+2018-06-20 12:51:51.645 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getCarRandom   : <==      Total: 4
+2018-06-20 12:51:51.647 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getCarRandom   : ==>  Preparing: SELECT * FROM car WHERE on_sale=1 ORDER BY rand() LIMIT 6 
+2018-06-20 12:51:51.647 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getCarRandom   : ==> Parameters: 
+2018-06-20 12:51:51.655 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.demo.mapper.CarMapper.getCarRandom   : <==      Total: 6
+2018-06-20 12:51:51.661 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.CommentMapper.getCommentRandom   : ==>  Preparing: SELECT * FROM comment ORDER BY rand() LIMIT 3 
+2018-06-20 12:51:51.661 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.CommentMapper.getCommentRandom   : ==> Parameters: 
+2018-06-20 12:51:51.672 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.CommentMapper.getCommentRandom   : <==      Total: 3
+2018-06-20 12:51:52.116 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:51:52.116 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: test03(String)
+2018-06-20 12:51:52.118 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
+2018-06-20 12:51:52.121 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:51:52.122 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: test03(String)
+2018-06-20 12:51:52.123 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
+2018-06-20 12:51:52.125 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:51:52.126 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: test03(String)
+2018-06-20 12:51:52.127 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
+2018-06-20 12:51:52.129 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:51:52.130 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: test03(String)
+2018-06-20 12:51:52.131 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
+2018-06-20 12:51:52.159 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:51:52.159 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: test03(String)
+2018-06-20 12:51:52.160 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
+2018-06-20 12:51:52.162 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:51:52.163 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: test03(String)
+2018-06-20 12:51:52.165 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
+2018-06-20 12:51:52.167 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:51:52.168 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: user01(String)
+2018-06-20 12:51:52.170 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
+2018-06-20 12:53:13.403 DEBUG 7528 --- [http-nio-8080-exec-7] c.h.d.m.A.selectAdminByNameAndPassword   : ==>  Preparing: SELECT * FROM admin WHERE admin_account=? AND admin_password=? 
+2018-06-20 12:53:13.403 DEBUG 7528 --- [http-nio-8080-exec-7] c.h.d.m.A.selectAdminByNameAndPassword   : ==> Parameters: admin01(String), admin(String)
+2018-06-20 12:53:13.406 DEBUG 7528 --- [http-nio-8080-exec-7] c.h.d.m.A.selectAdminByNameAndPassword   : <==      Total: 1
+2018-06-20 12:53:13.438 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.UserMapper.getCount      : ==>  Preparing: SELECT count(*) FROM user 
+2018-06-20 12:53:13.438 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.UserMapper.getCount      : ==> Parameters: 
+2018-06-20 12:53:13.440 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.UserMapper.getCount      : <==      Total: 1
+2018-06-20 12:53:13.448 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.TradeMapper.getCount     : ==>  Preparing: SELECT count(*) FROM trade 
+2018-06-20 12:53:13.448 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.TradeMapper.getCount     : ==> Parameters: 
+2018-06-20 12:53:13.450 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.TradeMapper.getCount     : <==      Total: 1
+2018-06-20 12:53:13.451 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.CommentMapper.getCount   : ==>  Preparing: SELECT count(*) FROM comment 
+2018-06-20 12:53:13.451 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.CommentMapper.getCount   : ==> Parameters: 
+2018-06-20 12:53:13.452 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.CommentMapper.getCount   : <==      Total: 1
+2018-06-20 12:53:13.455 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.AgentMapper.getCount     : ==>  Preparing: SELECT count(*) FROM agent 
+2018-06-20 12:53:13.455 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.AgentMapper.getCount     : ==> Parameters: 
+2018-06-20 12:53:13.456 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.AgentMapper.getCount     : <==      Total: 1
+2018-06-20 12:53:13.457 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.CarMapper.getCount       : ==>  Preparing: SELECT count(*) FROM car 
+2018-06-20 12:53:13.458 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.CarMapper.getCount       : ==> Parameters: 
+2018-06-20 12:53:13.461 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.CarMapper.getCount       : <==      Total: 1
+2018-06-20 12:53:13.465 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.CarMapper.getAllCar      : ==>  Preparing: SELECT * FROM car 
+2018-06-20 12:53:13.465 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.CarMapper.getAllCar      : ==> Parameters: 
+2018-06-20 12:53:13.487 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.CarMapper.getAllCar      : <==      Total: 79
+2018-06-20 12:53:13.489 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.d.m.CommentMapper.getAllComment      : ==>  Preparing: SELECT * FROM comment 
+2018-06-20 12:53:13.490 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.d.m.CommentMapper.getAllComment      : ==> Parameters: 
+2018-06-20 12:53:13.491 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.d.m.CommentMapper.getAllComment      : <==      Total: 4
+2018-06-20 12:53:13.495 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.AgentMapper.getAllAgent  : ==>  Preparing: SELECT * FROM agent 
+2018-06-20 12:53:13.495 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.AgentMapper.getAllAgent  : ==> Parameters: 
+2018-06-20 12:53:13.497 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.AgentMapper.getAllAgent  : <==      Total: 6
+2018-06-20 12:53:13.499 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.UserMapper.getAllUser    : ==>  Preparing: SELECT * FROM user 
+2018-06-20 12:53:13.499 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.UserMapper.getAllUser    : ==> Parameters: 
+2018-06-20 12:53:13.502 DEBUG 7528 --- [http-nio-8080-exec-2] c.h.demo.mapper.UserMapper.getAllUser    : <==      Total: 9
+2018-06-20 12:53:19.811 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.CommentMapper.deleteCommentById  : ==>  Preparing: DELETE FROM comment WHERE message_id=? 
+2018-06-20 12:53:19.812 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.CommentMapper.deleteCommentById  : ==> Parameters: 7(Integer)
+2018-06-20 12:53:19.819 DEBUG 7528 --- [http-nio-8080-exec-1] c.h.d.m.CommentMapper.deleteCommentById  : <==    Updates: 1
+2018-06-20 12:53:19.842 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.UserMapper.getCount      : ==>  Preparing: SELECT count(*) FROM user 
+2018-06-20 12:53:19.843 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.UserMapper.getCount      : ==> Parameters: 
+2018-06-20 12:53:19.844 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.UserMapper.getCount      : <==      Total: 1
+2018-06-20 12:53:19.846 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.TradeMapper.getCount     : ==>  Preparing: SELECT count(*) FROM trade 
+2018-06-20 12:53:19.846 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.TradeMapper.getCount     : ==> Parameters: 
+2018-06-20 12:53:19.847 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.TradeMapper.getCount     : <==      Total: 1
+2018-06-20 12:53:19.848 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.CommentMapper.getCount   : ==>  Preparing: SELECT count(*) FROM comment 
+2018-06-20 12:53:19.848 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.CommentMapper.getCount   : ==> Parameters: 
+2018-06-20 12:53:19.849 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.CommentMapper.getCount   : <==      Total: 1
+2018-06-20 12:53:19.852 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.AgentMapper.getCount     : ==>  Preparing: SELECT count(*) FROM agent 
+2018-06-20 12:53:19.852 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.AgentMapper.getCount     : ==> Parameters: 
+2018-06-20 12:53:19.853 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.AgentMapper.getCount     : <==      Total: 1
+2018-06-20 12:53:19.854 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.CarMapper.getCount       : ==>  Preparing: SELECT count(*) FROM car 
+2018-06-20 12:53:19.854 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.CarMapper.getCount       : ==> Parameters: 
+2018-06-20 12:53:19.855 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.CarMapper.getCount       : <==      Total: 1
+2018-06-20 12:53:19.856 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.CarMapper.getAllCar      : ==>  Preparing: SELECT * FROM car 
+2018-06-20 12:53:19.856 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.CarMapper.getAllCar      : ==> Parameters: 
+2018-06-20 12:53:19.870 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.CarMapper.getAllCar      : <==      Total: 79
+2018-06-20 12:53:19.872 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.d.m.CommentMapper.getAllComment      : ==>  Preparing: SELECT * FROM comment 
+2018-06-20 12:53:19.872 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.d.m.CommentMapper.getAllComment      : ==> Parameters: 
+2018-06-20 12:53:19.873 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.d.m.CommentMapper.getAllComment      : <==      Total: 3
+2018-06-20 12:53:19.874 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.AgentMapper.getAllAgent  : ==>  Preparing: SELECT * FROM agent 
+2018-06-20 12:53:19.875 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.AgentMapper.getAllAgent  : ==> Parameters: 
+2018-06-20 12:53:19.877 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.AgentMapper.getAllAgent  : <==      Total: 6
+2018-06-20 12:53:19.879 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.UserMapper.getAllUser    : ==>  Preparing: SELECT * FROM user 
+2018-06-20 12:53:19.879 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.UserMapper.getAllUser    : ==> Parameters: 
+2018-06-20 12:53:19.882 DEBUG 7528 --- [http-nio-8080-exec-6] c.h.demo.mapper.UserMapper.getAllUser    : <==      Total: 9
+2018-06-20 12:53:49.784 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : ==>  Preparing: SELECT DISTINCT car_brand FROM car ORDER BY car_brand 
+2018-06-20 12:53:49.785 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : ==> Parameters: 
+2018-06-20 12:53:49.787 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : <==      Total: 29
+2018-06-20 12:53:49.788 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : ==>  Preparing: SELECT DISTINCT car_type FROM car ORDER BY car_type 
+2018-06-20 12:53:49.789 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : ==> Parameters: 
+2018-06-20 12:53:49.789 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : <==      Total: 6
+2018-06-20 12:53:49.793 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : ==>  Preparing: SELECT DISTINCT car_age FROM car ORDER BY car_age 
+2018-06-20 12:53:49.793 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : ==> Parameters: 
+2018-06-20 12:53:49.794 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : <==      Total: 11
+2018-06-20 12:53:49.795 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : ==>  Preparing: SELECT DISTINCT car_shift FROM car ORDER BY car_shift 
+2018-06-20 12:53:49.795 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : ==> Parameters: 
+2018-06-20 12:53:49.796 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : <==      Total: 8
+2018-06-20 12:53:49.798 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : ==>  Preparing: SELECT DISTINCT car_color FROM car ORDER BY car_color 
+2018-06-20 12:53:49.798 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : ==> Parameters: 
+2018-06-20 12:53:49.800 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : <==      Total: 10
+2018-06-20 12:53:49.801 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : ==>  Preparing: SELECT DISTINCT car_fuel FROM car ORDER BY car_fuel 
+2018-06-20 12:53:49.802 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : ==> Parameters: 
+2018-06-20 12:53:49.803 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getProperty    : <==      Total: 4
+2018-06-20 12:53:49.804 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.AgentMapper.getNAgent    : ==>  Preparing: SELECT * FROM agent LIMIT 0,4 
+2018-06-20 12:53:49.804 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.AgentMapper.getNAgent    : ==> Parameters: 
+2018-06-20 12:53:49.805 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.AgentMapper.getNAgent    : <==      Total: 4
+2018-06-20 12:53:49.807 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getCarRandom   : ==>  Preparing: SELECT * FROM car WHERE on_sale=1 ORDER BY rand() LIMIT 4 
+2018-06-20 12:53:49.809 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getCarRandom   : ==> Parameters: 
+2018-06-20 12:53:49.817 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getCarRandom   : <==      Total: 4
+2018-06-20 12:53:49.818 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getCarRandom   : ==>  Preparing: SELECT * FROM car WHERE on_sale=1 ORDER BY rand() LIMIT 6 
+2018-06-20 12:53:49.819 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getCarRandom   : ==> Parameters: 
+2018-06-20 12:53:49.831 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.demo.mapper.CarMapper.getCarRandom   : <==      Total: 6
+2018-06-20 12:53:49.833 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.CommentMapper.getCommentRandom   : ==>  Preparing: SELECT * FROM comment ORDER BY rand() LIMIT 3 
+2018-06-20 12:53:49.834 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.CommentMapper.getCommentRandom   : ==> Parameters: 
+2018-06-20 12:53:49.837 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.CommentMapper.getCommentRandom   : <==      Total: 3
+2018-06-20 12:53:49.845 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:53:49.845 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: test03(String)
+2018-06-20 12:53:49.847 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
+2018-06-20 12:53:49.848 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:53:49.849 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: test03(String)
+2018-06-20 12:53:49.850 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
+2018-06-20 12:53:49.851 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:53:49.852 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: test03(String)
+2018-06-20 12:53:49.853 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
+2018-06-20 12:53:49.854 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:53:49.855 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: test03(String)
+2018-06-20 12:53:49.855 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
+2018-06-20 12:53:49.864 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:53:49.865 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: test03(String)
+2018-06-20 12:53:49.866 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
+2018-06-20 12:53:49.867 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:53:49.867 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: user02(String)
+2018-06-20 12:53:49.869 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
+2018-06-20 12:53:49.870 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==>  Preparing: SELECT * FROM user WHERE user_account=? 
+2018-06-20 12:53:49.870 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : ==> Parameters: user01(String)
+2018-06-20 12:53:49.872 DEBUG 7528 --- [http-nio-8080-exec-4] c.h.d.m.UserMapper.getUserByAccount      : <==      Total: 1
